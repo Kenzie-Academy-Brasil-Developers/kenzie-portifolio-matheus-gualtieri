@@ -43,20 +43,32 @@ export const ProjectTitle = styled(Text, {});
 
 export const Project = styled("article", {
   marginTop: "4rem",
+  maxWidth: "500px",
+  border: "1px solid $brand1",
+  borderRadius: "10px",
+  padding: "1rem",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  transition: "0.3s",
+  "&:hover": {
+    backgroundColor: "$grey1",
+    borderColor: "$brand2",
+    transition: "0.3s",
+  },
   [`&:first-child`]: {
     [`& ${ProjectTitle}:first-child`]: {
       position: "relative",
-      width: "max-content",
 
       "@mobile": {
         width: "auto",
       },
 
       "&::before": {
-        content: 'New',
+        content: "New",
         position: "absolute",
-        top: "5px",
-        right: "-4rem",
+        top: "-30px",
+        left: "0",
         width: "max-content",
         height: "28px",
         backgroundColor: "$brand1",

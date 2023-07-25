@@ -130,7 +130,8 @@ export const ProjectsAreaContent = styled("div", {
   width: "100%",
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
-  gridGap: "4rem",
+  gridGap: "2rem",
+  justifyContent: "space-between",
   "@mobile": {
     gridTemplateColumns: "1fr",
     overflow: "hidden",

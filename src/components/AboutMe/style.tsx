@@ -12,3 +12,9 @@ export const AboutMeSection = styled("section", {
 export const AboutMeTittle = styled(Text, {
   marginBottom: "32px",
 });
+
+export const AboutMeTextArea = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  gap: "1rem",
+});
